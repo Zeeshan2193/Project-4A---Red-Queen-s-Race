@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+#red-queen_and_alice {
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  width: 80%;
+  max-width: 450px; /*height: 783px / 2*/
+  z-index: 1;}
+#red-queen_and_alice:before {
+    content: " ";
+    display: block;
+    padding-top: 87%;}
+#red-queen_and_alice img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;  }
+.sky, .earth {
+  position: absolute;
+  left: 0;
+  height: 50vh;
+  width: 100%;}
+img {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);}
+.earth{
+  background: lightgreen repeat-x 0 0 /  100% auto;  
+  width: 100%;
+  bottom: 0;
+}
+.sky {
+  width: 100%;
+}
+.sky >img{
+  top: 0;
+  width: 100%;
+  height: 650px;
+}
+.scenery {
+  width: 100%; height: 50%;
+  position: absolute;
+  bottom: 0; left: 0;
+}
+#foreground { z-index: 1 ;}
+#foreground, .background2 {
+  transform: translateX(100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#treefore {
+  top: -70%; left: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#pawn {
+  top: 5%; left: 30%
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.foreground2, .background2 {
+  transform: translateX(100%);
 }
 
-.App-link {
-  color: #61dafb;
+.pawn {
+  top: -120%; left: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pawn2 {
+  top: -110%; left: 80%;    
 }
+
+.treeback {
+  top: -125%; left: 40%    
+}
+
+
+html, body {
+  width: 100%; height: 100%;
+}
+
+.container {
+  width: 100%; height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+.earth > img{
+  width: 100%;
+}
+* { user-select: none; }
